@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1
+        // for(let z = 1; z <= 50; z++ ){
+        //     console.log(`data tampil ke- ${z}`)
+        // }
+
+        // //2
+        // for(let x = 1; x <= 50; x++){
+        //     if(x % 2 == 1)
+        //     console.log(`ganjil ` , x)
+        // }
+
+        // //3
+        // for(let m = 1; m <= 50; m++){
+        //     if( m % 2 == 0)
+        //     console.log(`genap` , m)
+        // }
+
+        //4
+        // for( let i = 1; i <= 50; i++){
+        //     if(i % 2 == 1){
+        //     console.log(`ganjil`, i)
+        //     }
+        // else
+        // {console.log(`genap`,i)}
+        // }
+
+        //5
+        let total = 0
+        let tinggi = 0
+        let rendah = 100
+        for(let a = 1; a <= 20; a++ ){
+            bil = parseInt(prompt("input bilangan(hanya angka)"))
+            if (bil < tinggi) {
+                tinggi = bil
+            } else {
+                tinggi = tinggi
+                if (bil < rendah) {
+                    rendah = bil
+                } else {
+                    rendah = rendah
+                }
+            }
+            total = total + bil
+        }
+        rata = total / 20
+
+        console.log (`${tinggi} `)
+
+
+             
+    </script>
+</body>
+</html>
